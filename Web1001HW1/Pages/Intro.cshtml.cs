@@ -23,6 +23,7 @@ namespace Web1001HW1.Pages
         public int firstNo { get; set; }
 
         [FromQuery(Name = "secondNo")]
+
         public int secondNo{ get; set; }
 
 

@@ -7,16 +7,23 @@
 
 @section UI
 {
-<div><h3>Naval Sharma</h3></div>
-<form method="get">
-    <input name="firstNo" type="number" />
-    <input name="secondNo" type="number" />
-    <input type="submit" value="submit" />
-    <output name="result" />
-</form>
+    <div><h3>Naval Sharma</h3></div>
+    <p>This is the dummy paragraph to show we can add text
+    within this section in the intro page.. also it is used to
+    full fill this item in the assignment - Use the previously defined section that
+    you created to display a paragraph of text on the page you created..
 
-@if (Model.resultSet == true) {
-    
-<output>@Model.result</output>}
+    This below section takes two positve input numbers and multoply them to show the result. </p>
+    <form method="get">
+        <input name="firstNo" type="number" value="@Model.firstNo"/>
+        <input name="secondNo" type="number" value="@Model.secondNo" />
+        <input type="submit" value="submit" />
+        <output name="result" />
+    </form>
 
+    @if (Model.resultSet == true)
+    {
+        <div class="answer">The answer is: <output>@Model.result</output></div>
+        
+    }
 }
